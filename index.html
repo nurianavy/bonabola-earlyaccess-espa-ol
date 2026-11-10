@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ya estás dentro · Black Friday Bonabola</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* Todo va dentro de .bb-ea para no chocar con los estilos del tema de Shopify */
+.bb-ea { --ink:#000; --text:#555; --muted:#999990; --gold:#a2967c; --sand:#E2DCCC; --cream:#f0ede8; --night:#111;
+  font-family: Inter, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--cream); margin:0; -webkit-font-smoothing:antialiased; }
+.bb-ea * { box-sizing:border-box; }
+.bb-ea a { color:inherit; text-decoration:none; }
+.bb-ea img { display:block; max-width:100%; height:auto; }
+.bb-ea .wrap { max-width:1040px; margin:0 auto; }
+.bb-ea .eyebrow { font-size:11px; font-weight:600; letter-spacing:4px; text-transform:uppercase; }
+.bb-ea .btn { display:inline-block; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; padding:17px 40px; }
+.bb-ea .btn-dark { background:#000; color:#fff; }
+.bb-ea .btn-light { background:#fff; color:#000; }
+.bb-ea .link { font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; border-bottom:1px solid currentColor; padding-bottom:3px; }
+
+/* HERO */
+.bb-ea .hero { position:relative; min-height:72vh; display:flex; align-items:flex-end; color:#fff;
+  background:#111 url('https://cdn.klaviyomail.com/company/UrDHv2/images/156e462a-8d51-4c61-854e-3162be0ac2bb.png') center/cover no-repeat; }
+.bb-ea .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.72) 100%); }
+.bb-ea .hero .inner { position:relative; padding:0 24px 64px; width:100%; }
+.bb-ea .check { width:44px; height:44px; border:1px solid rgba(255,255,255,.7); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:26px; }
+.bb-ea .hero .eyebrow { color:#e2dccc; margin-bottom:18px; }
+.bb-ea h1 { font-weight:300; font-size:clamp(42px,7vw,76px); line-height:1.02; letter-spacing:-1px; margin:0 0 22px; }
+.bb-ea .lead { font-size:17px; line-height:1.75; max-width:560px; color:#ece8e1; margin:0; }
+
+.bb-ea .date { display:inline-flex; background:#B5201F; color:#fff; border:1px solid #B5201F; margin:0 0 24px; font-size:12px; font-weight:600; letter-spacing:3px; text-transform:uppercase; }
+.bb-ea .date span { padding:12px 18px; }
+.bb-ea .date span + span { border-left:1px solid rgba(255,255,255,.4); }
+/* MIENTRAS TANTO */
+.bb-ea .wait { background:#fff; padding:88px 24px; }
+.bb-ea .wait .eyebrow { color:var(--gold); margin-bottom:16px; }
+.bb-ea h2 { font-weight:300; font-size:clamp(30px,4vw,42px); line-height:1.15; margin:0 0 12px; letter-spacing:-.5px; }
+.bb-ea .wait p { color:var(--text); font-size:15px; line-height:1.8; margin:0 0 48px; }
+.bb-ea .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.bb-ea .card { background:var(--sand); display:flex; flex-direction:column; transition:transform .25s ease; }
+.bb-ea .card:hover { transform:translateY(-3px); }
+.bb-ea .card .ph { background:#f4f2ee; aspect-ratio:4/5; overflow:hidden; }
+.bb-ea .card .ph img { width:100%; height:100%; object-fit:contain; padding:24px; }
+.bb-ea .card .meta { padding:22px 24px 26px; display:flex; justify-content:space-between; align-items:flex-end; gap:12px; }
+.bb-ea .card .name { font-size:20px; font-weight:600; letter-spacing:2px; }
+.bb-ea .card .tag { font-size:13px; font-style:italic; color:#777770; margin-top:6px; }
+.bb-ea .actions { margin-top:44px; display:flex; flex-wrap:wrap; gap:28px; align-items:center; }
+
+/* SOCIAL */
+.bb-ea .social { background:var(--night); color:#fff; padding:80px 24px; text-align:center; }
+.bb-ea .social h2 { color:#fff; }
+.bb-ea .social p { color:#a8a192; font-size:15px; line-height:1.8; margin:0 0 34px; }
+.bb-ea .icons { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+.bb-ea .icon { display:inline-flex; align-items:center; gap:10px; border:1px solid #3a3632; padding:14px 22px; font-size:11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; transition:background .2s ease; }
+.bb-ea .icon:hover { background:#1d1b19; }
+.bb-ea .icon svg { width:18px; height:18px; fill:#fff; }
+.bb-ea .help { background:var(--cream); text-align:center; padding:28px 24px; font-size:13px; color:#888; }
+.bb-ea .help a { color:#000; border-bottom:1px solid #000; }
+
+@media (max-width:640px) {
+  .bb-ea .hero { min-height:64vh; }
+  .bb-ea .hero .inner { padding-bottom:44px; }
+  .bb-ea .lead { font-size:15px; }
+  .bb-ea .wait { padding:64px 16px; }
+  .bb-ea .grid { grid-template-columns:1fr; }
+  .bb-ea .social { padding:64px 16px; }
+  .bb-ea .actions { flex-direction:column; align-items:flex-start; gap:22px; }
+}
+</style>
+</head>
+<body style="margin:0;">
+<div class="bb-ea">
+
+  <section class="hero">
+    <div class="inner"><div class="wrap">
+      <div class="check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <div class="eyebrow">Black Friday · Early access</div>
+      <h1>Ya estás dentro.</h1>
+      <div class="date"><span>Martes 24 nov</span><span>18:00 h</span></div>
+      <p class="lead">Te has apuntado al acceso anticipado de nuestro Black Friday. Abrimos el martes 24 de noviembre a las 18:00 h, y te avisaremos por correo para que entres antes que el resto.</p>
+    </div></div>
+  </section>
+
+  <section class="wait"><div class="wrap">
+    <div class="eyebrow">Mientras tanto</div>
+    <h2>Ve mirando tus favoritas.</h2>
+    <p>Así, cuando llegue el día, solo tendrás que elegir.</p>
+    <div class="grid">
+      <a class="card" href="https://bonabola.com/products/hepta">
+        <div class="ph"><img src="https://cdn.klaviyomail.com/company/UrDHv2/images/1fc9daa9-b284-43ae-ae4f-0e94af4ae9b8.jpeg" alt="Pala Hepta" loading="lazy"></div>
+        <div class="meta"><div><div class="name">HEPTA</div><div class="tag">Control y precisión</div></div><span class="link">Ver Hepta</span></div>
+      </a>
+      <a class="card" href="https://bonabola.com/products/bevel">
+        <div class="ph"><img src="https://cdn.klaviyomail.com/company/UrDHv2/images/0b57a46f-b69b-4dae-b5cc-83647aa42000.jpeg" alt="Pala Bevel" loading="lazy"></div>
+        <div class="meta"><div><div class="name">BEVEL</div><div class="tag">Potencia y ataque</div></div><span class="link">Ver Bevel</span></div>
+      </a>
+    </div>
+    <div class="actions">
+      <a class="btn btn-dark" href="https://bonabola.com/collections/palas">Ver todas las palas</a>
+      <a class="link" href="https://bonabola.com">Ir a la web &rsaquo;</a>
+    </div>
+  </div></section>
+
+  <section class="social"><div class="wrap">
+    <h2>Síguenos para no perderte nada</h2>
+    <p>Ahí contamos primero lo que sale del taller.</p>
+    <div class="icons">
+      <a class="icon" href="https://www.instagram.com/bonabola.padel/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3Zm0 7.8a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2Zm6-8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21.9 7.2c-.1-1.6-.4-3-1.6-4.2S17.7 1.4 16.1 1.3C14.4 1.2 9.6 1.2 7.9 1.3 6.3 1.4 4.9 1.7 3.7 2.9S2.1 5.6 2 7.2C1.9 8.9 1.9 13.7 2 15.4c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.5.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.5 0-8.2Zm-2.1 10a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.2 3.2 0 0 1 6.6 4c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7Z"/></svg>Instagram</a>
+      <a class="icon" href="https://www.tiktok.com/@bonabola.padel" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.2v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.6a5.8 5.8 0 1 0 5 5.8V9.1a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5Z"/></svg>TikTok</a>
+    </div>
+  </div></section>
+
+  <div class="help">¿Alguna duda? Escríbenos a <a href="mailto:comunicacion@bonabola.com">comunicacion@bonabola.com</a></div>
+</div>
+</body>
+</html>
